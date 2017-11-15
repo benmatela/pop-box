@@ -1,0 +1,13 @@
+<div class="container">
+    <h1 class="custom-h1 text-center">POP-BOX</h1>
+    <h3>SCORE:
+        <span class="badge">{{this.scoreUpdate}}</span>
+    </h3>
+    <h3>MOVES:
+        <span class="badge">{{this.playerMoves}}</span>
+    </h3>
+    <br/>
+    <br/>
+    <hr/>
+    <boxes (playerMoves)="getMoves($event)"></boxes>
+</div>

@@ -1,0 +1,15 @@
+<div>
+    <div class="row text-center">
+        <div *ngFor="let box of this.boxesToPop; let i = index;" id="{{i}}" [hidden]="this.selectedBox === box" class="col-lg-4 random-words">
+            {{box.name}}
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-lg-2 custom-square" id="box.name" (click)="onClickedBox(box)" *ngFor="let box of this.boxes">{{box.name}}</div>
+    </div>
+    <br/>
+    <div class="text-center">
+        <button class="btn btn-default" (click)="onReset()">Reset</button>
+    </div>
+</div>
